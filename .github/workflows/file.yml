@@ -12,4 +12,4 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }} 
           format: markdown
-          message: ||${{ github.repository }}|| Pull request ${{ github.event.action }} with title ${{github.event.pull_request.title}}
+          message: ${{ github.repository }} Pull request ${{ github.event.action }} with title ${{github.event.pull_request.title}}
